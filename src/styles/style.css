@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block; /* remove os pixels entre as imagens que é inline-block */
+  max-width: 100%;
+}
+
+.content {
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.slide li {
+  flex-shrink: 0; /* faz com que não reduza o tamanho da imagem*/
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 20px;
+}
